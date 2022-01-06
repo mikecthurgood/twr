@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap } from 'react-google-maps';
+import { mapStyles } from './style';
 const {
   MarkerWithLabel,
 } = require('react-google-maps/lib/components/addons/MarkerWithLabel');
@@ -45,6 +46,7 @@ export const Map = withScriptjs(
                 defaultZoom={14}
                 defaultCenter={geo}
                 options={{
+                  styles: mapStyles,
                   fullscreenControl: false,
                   mapTypeControl: false,
                   streetViewControl: false,
