@@ -1,22 +1,40 @@
 {
-  "name": "twr",
+  "name": "root",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
   "devDependencies": {
-    "@types/node": "17.0.5",
-    "@types/react": "17.0.38",
-    "eslint": "8.5.0",
-    "eslint-config-next": "12.0.7",
-    "typescript": "4.5.4"
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^4.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-export-all": "^1.2.1",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "version": "1.0.0",
+  "description": "twr website and monorepo",
+  "author": "Mike Thurgood mikecthurgood@gmail.com",
+  "license": "unlicensed",
+  "scripts": {
+    "bootstrap": "yarn install; lerna bootstrap;",
+    "start": "lerna run start --parallel",
+    "start:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope @twr/app --stream dev",
+    "build:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope @twr/app --stream build",
+    "run:build:app": "lerna run start --scope @twr/app",
+    "lint": "eslint 'packages/**/src/**/*.{js,ts,tsx}' --fix --quiet"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "commitizen": "^4.2.4"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "name": "@twr/shared",
+  "version": "0.0.0",
+  "description": "twr monorepo",
+  "author": "Mike Thurgood <mike.thurgood@oddschecker.com>",
+  "homepage": "",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
+    "@types/react": "^17.0.4",
+    "@types/react-redux": "^7.1.21",
+    "dotenv": "^10.0.0",
+    "hypernova": "^2.5.0",
+    "js-cookie": "^3.0.1",
+    "lodash.isequal": "^4.5.0",
+    "next-images": "^1.7.0",
+    "next-linaria": "^0.11.0",
+    "normalizr": "^3.6.1",
+    "query-string": "^7.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-redux": "^7.2.6",
+    "react-responsive": "^9.0.0-beta.5",
+    "redux": "^4.1.2",
+    "rxjs": "^7.5.1",
+    "sass": "^1.45.1",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.19",
+    "babel-plugin-styled-components": "^2.0.2"
+  }
+}
