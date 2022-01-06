@@ -1,0 +1,91 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+$variable-prefix: twr- !default;
+
+$static-asset-route: "http://localhost:5555" !default;
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white: #ffffff !default;
+$gray-100: #f7f8f9 !default;
+$gray-200: #f2f2f2 !default;
+$gray-300: #eaeae9 !default;
+$gray-400: #e5e5e5 !default;
+$gray-500: #dcdcdc !default;
+$gray-600: #9d9da3 !default;
+$gray-main: #e7e8ec !default;
+$gray-dark: #2e3033 !default;
+$gray-button: #3f4144 !default;
+$gray-light: #cacdd6 !default;
+$black: #1c1d1e !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start gray-colors-map
+$grays: (
+	"100": $gray-100,
+	"200": $gray-200,
+	"300": $gray-300,
+	"400": $gray-400,
+	"500": $gray-500,
+	"600": $gray-600,
+) !default;
+// scss-docs-end gray-colors-map
+
+// scss-docs-start color-variables
+$blue: #21b7e9 !default;
+$blue-light: #8cccf2 !default;
+$blue-dark: #007cd5 !default;
+$blue-extra-dark: #033954 !default;
+$green: #0edd98 !default;
+$green-dark: #008758 !default;
+$pink: #ffafba !default;
+$red: #ea1042 !default;
+$yellow: #ffbb00 !default;
+$yellow-light: #fddb00 !default;
+$purple: #8200e5 !default;
+$coral: #ff5b5a !default;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary-black: $black !default;
+$primary-blue: $blue-extra-dark !default;
+$primary-gray: $gray-main !default;
+$primary-white: $white !default;
+$primary-coral: $coral !default;
+$text-body: $black !default;
+$text-white: $white !default;
+$text-subtext: $gray-600 !default;
+$search-gray: $gray-dark !default;
+$button-gray: $gray-button !default;
+$light-gray: $gray-light !default;
+
+// scss-docs-end theme-color-variables
+
+// scss-docs-start colors-map
+$theme-colors: (
+	"button-gray": $button-gray,
+	"primary-black": $primary-black,
+	"primary-blue": $primary-blue,
+	"primary-gray": $primary-gray,
+	"primary-white": $primary-white,
+	"primary-coral": $primary-coral,
+	"search-gray": $search-gray,
+	"text-body": $text-body,
+	"text-white": $text-white,
+	"text-subtext": $text-subtext,
+	"light-gray": $light-gray,
+) !default;
+// scss-docs-end colors-map
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family: "Nunito Sans", "Trebuchet MS", sans-serif !default;
+$font-heading: Pilcrow !default;
